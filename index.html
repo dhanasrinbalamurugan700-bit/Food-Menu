@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food Menu</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 85%;
+    max-width: 800px;
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #5a4fcf;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th {
+    background: #5a4fcf;
+    color: white;
+    padding: 14px;
+    font-weight: 500;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    color: #444;
+}
+
+tr {
+    transition: 0.3s ease;
+}
+
+tr:nth-child(even) {
+    background: #f8f7ff;
+}
+
+tr:hover {
+    background: #ecebff;
+    transform: scale(1.01);
+}
+
+/* Category Badge Style */
+.category {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.veg {
+    background: #d4f8d4;
+    color: #2e7d32;
+}
+
+.nonveg {
+    background: #ffe0e0;
+    color: #c62828;
+}
+
+.dessert {
+    background: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.price {
+    font-weight: 500;
+    color: #5a4fcf;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🍽️Restaurent Food Menu</h1>
+
+<table>
+    <tr>
+        <th>Food Item</th>
+        <th>Category</th>
+        <th>Price</th>
+    </tr>
+
+    <tr>
+        <td>Paneer Butter Masala</td>
+        <td><span class="category veg">Veg</span></td>
+        <td class="price">₹180</td>
+    </tr>
+
+    <tr>
+        <td>Chicken Biryani</td>
+        <td><span class="category nonveg">Non-Veg</span></td>
+        <td class="price">₹220</td>
+    </tr>
+
+    <tr>
+        <td>Veg Alfredo Pasta</td>
+        <td><span class="category veg">Veg</span></td>
+        <td class="price">₹190</td>
+    </tr>
+
+    <tr>
+        <td>Grilled Fish</td>
+        <td><span class="category nonveg">Non-Veg</span></td>
+        <td class="price">₹250</td>
+    </tr>
+
+    <tr>
+        <td>Chocolate Lava Cake</td>
+        <td><span class="category dessert">Dessert</span></td>
+        <td class="price">₹120</td>
+    </tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
